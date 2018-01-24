@@ -1,0 +1,671 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>end2end</title>
+    <description>A free Jekyll theme for download</description>
+    <link>http://localhost:4000/</link>
+    <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Wed, 24 Jan 2018 17:26:03 +0530</pubDate>
+    <lastBuildDate>Wed, 24 Jan 2018 17:26:03 +0530</lastBuildDate>
+    <generator>Jekyll v3.5.2</generator>
+    
+      <item>
+        <title>ESB and API Management Platforms – An evolutionary perspective on commonalities and differences</title>
+        <description>&lt;div class=&quot;post-content&quot;&gt;
+      &lt;p&gt;Did you ever hear Facebook, Google or Amazon using ESBs? May be not. A web scale organization may have much more integration complexities than a typically enterprise, but it is not common to hear them adopt certain architectural paradigms (or technology products) that are mainstream in enterprises, say a bank or an insurance organization. One of the fundamental reason for that is the “age” of enterprise and its “evolution” alongside technology advancement over the decades. These enterprises existed much before web companies came into existence, and what differentiates them is the huge legacy that they have accumulated over years.&lt;/p&gt;
+
+&lt;p&gt;Let us talk about a tech-savvy bank (say &lt;em&gt;XY Bank&lt;/em&gt;) of pre-internet era, starting from 90s. &lt;em&gt;XYB&lt;/em&gt; has most of its business functions and data on mainframes. Employees are using dumb terminals that connect them to the mainframes. Thick client UI applications have taken over some of the front-end functions. These client/server applications talk to a [database] server or say a program written on C/Unix, which in turn communicates with a DB or mainframe systems.&lt;/p&gt;
+
+&lt;p&gt;By mid 90s, internet gradually started gaining popularity. &lt;em&gt;XYB&lt;/em&gt; now wants its core functions to be available on internet so it creates a web platform for its customers. Since internet is just an additional channel, it makes no sense for core applications to be re-written. We just need new web platform to “communicate” to the existing applications in mainframes, coded in client/server architecture, are packaged/bespoke and so on.&lt;/p&gt;
+
+&lt;p&gt;The need for applications to “communicate” accelerated advances in “distributed computing” technology. Remember this was also an era of mergers and acquisition of financial organizations, which increased the need to wire more systems. Technology companies filled the void with &lt;em&gt;middleware products&lt;/em&gt;. Standards emerged; vendors came up with their implementations (e.g. implementation of ORB or enterprise java specification), EAI frameworks and finally ESBs. ESBs fundamentally fulfilled the following needs:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;ESBs held the internal architectural pieces of enterprises together. It is the internal nervous system of an organization, which decouple big monolith organs, and provided a unified layer for upstream applications.&lt;/li&gt;
+  &lt;li&gt;Connected desperate enterprise systems written in different technologies, at different times, use different protocols, and are owned by different departments etc.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;Fast-forward a decade and we have API platforms. There is a commonality between the two in simplistic terms.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;ESBs abstracted enterprise assets built in 90s and before. API management suites are doing just the same with additional decade of legacy.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;The way internet forced enterprises to wrap their existing resources under ESBs to ease the consumption; digital forces are pushing them to adopt API based suites.&lt;/p&gt;
+
+&lt;p&gt;&lt;b&gt;In perfect world, enterprises did not need ESB suites then or API lifecycle suites now, but market competitiveness does justify introducing an extra layer in the architectural mix.&lt;/b&gt;&lt;/p&gt;
+
+&lt;p&gt;With digital-everything, &lt;em&gt;XYB&lt;/em&gt; has a need to become a platform now. The &lt;em&gt;consumers&lt;/em&gt; are not just its end customers, but also a larger ecosystem outside its enterprise boundaries. Fundamentally, &lt;em&gt;XYB&lt;/em&gt; is still a bank with same core business, but it now needs one extra layer to the onion architecture to appear like a platform. And what can fill that need? Web APIs. Web APIs can make &lt;em&gt;XYB&lt;/em&gt; more consumable in a standardized fashion. APIs can open it up for new partnerships say with FinTech startups, new channels and new products.&lt;/p&gt;
+
+&lt;p&gt;The challenge is, this needs to happen in a lean and nimble way amid all the complexities of IT landscape in a typically bank. This is where API management platforms shine. You do not need API platform to create APIs but you need them to create APIs fast. Of course, there are additional bells-and-whistles that API platform provide, but for an enterprise, the fundamental need is to create APIs quickly on top of their existing legacy assets. It is the ability of quickly wire the downstream resources and create an API that makes API platform unique.&lt;/p&gt;
+
+&lt;p&gt;API platforms meet the notion of 2-speed IT which is fundamental to segregate system of records from system of engagements. And they will continue to do so for a foreseeable future.&lt;/p&gt;
+
+    &lt;/div&gt;
+
+</description>
+        <pubDate>Tue, 10 May 2016 22:09:18 +0530</pubDate>
+        <link>http://localhost:4000/blog/2016/esb-and-api-management-platforms/</link>
+        <guid isPermaLink="true">http://localhost:4000/blog/2016/esb-and-api-management-platforms/</guid>
+        
+        <category>API</category>
+        
+        
+        <category>API</category>
+        
+      </item>
+    
+      <item>
+        <title>Enterprise Legacy and REST</title>
+        <description>&lt;div class=&quot;post-content&quot;&gt;
+      &lt;p&gt;One common challenge that today’s enterprises are facing is “How to RESTI-fy their decade old legacy applications”. Before we get into “How” part of RESTifying enterprise legacy, it is important to first understand the “Why”. What is wrong with SOAP web services? What actually changed in recent years, that we need to rethink now? After all, web services have abstracted enterprise legacy for more than a decade now.&lt;/p&gt;
+
+&lt;p&gt;Following are few broad areas that we need to understand why REST is more prominent than ever.&lt;/p&gt;
+
+&lt;h4 id=&quot;1-rest-as-an-architectural-style-makes-more-sense-in-certain-situations&quot;&gt;1) REST as an Architectural Style Makes More Sense in Certain Situations&lt;/h4&gt;
+
+&lt;p&gt;We tend to compare REST with SOAP web services but there cannot be a direct comparison between an architectural style (REST) and a protocol (SOAP). SOA with SOAP/HTTP and ROA (resource-oriented architecture) with JSON/HTTP have become so prominent forms of these two architectural styles that we mix these terms up. More apt comparison is between SOA and ROA. I have, though, used JSON and SOAP to examplify scenerios in the remaining post.&lt;/p&gt;
+
+&lt;p&gt;With that distinction in mind, let us start with SOA based web services. Web services are a way to do RPC. In simple terms, what RPC means is that if you cut open the SOAP request message, it has operation name inside it. Remember that “P” in RPC stands for “procedure” that you intend to call remotely - using web services, CORBA or any other means. This operation-oriented nature has problems in certain situations. It assumes that there exists a predefined operation, which behaves in certain way. Provider creates the contract and consumer adheres to that contract. This rigidity in contract though has benefits, is not always needed. Rigidity demands more governance and complicates the usage of services beyond enterprise boundaries. This behavior, to large extent, is dictated by SOA principles. Discoverability, service contracts, abstractions etc are, afterall, core to SOA. It does not mean that REST based architecture gives us the freedom to do things the way we want. It too has design principles and “constraints”. However, there are certain differences:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Both approaches decompose the problem domain differently. REST breaks down the problem as &lt;em&gt;resources&lt;/em&gt;, where as SOA puts &lt;em&gt;actions&lt;/em&gt; on the front seat.&lt;/li&gt;
+  &lt;li&gt;For most practical purposes, REST sits atop HTTP, whereas SOA based web services have one extra layer of abstraction in addition to HTTP - SOAP. Do we really need it, is highly debatable. It does have merits but those may not be needed in every situation.&lt;/li&gt;
+  &lt;li&gt;In case of REST, both “Web applications” and “Services” are designed with same architecture. It leverages standard elements of internet (routers, proxies, servers or consumer platforms) to their full potential, without any customizations.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Irrespective of which architectural style we use, we need to make right engineering compromises and adhere to the guidance to the extent needed. What is more important is to understand the rationale, and make wise use of guidance, stated principles and imposed constraints for architectural style chosen.&lt;/p&gt;
+
+&lt;p&gt;NOTE: There do &lt;a href=&quot;http://www.ibm.com/developerworks/library/ws-whichwsdl/&quot;&gt;exists&lt;/a&gt; message-oriented style for web services (Example: document/literal wrapped) but that too have constraints in addition to the complexity it brings.&lt;/p&gt;
+
+&lt;h4 id=&quot;2-advent-of-digital-technology&quot;&gt;2) Advent of Digital Technology&lt;/h4&gt;
+
+&lt;p&gt;Usage of REST has increased manifold due to emerging digital technologies. Let us take example of lowest denominator of digital channels – a modern web browser. It is not long since the job of a browser was primarily to render html markup. Of-course browsers were interactive right from the early days but most of the interactive-ness was handled on the web server. Browser mostly displayed content and captured the input. Web servers called the middleware, which in turn abstracted various enterprise systems. Things changed as commodity hardware became cheaper and powerful. It allowed desktop applications including browsers to consume more hardware and network resources. JS based frameworks, libraries and developer ecosystem leapfrogged the web development. Browser became full-blown client tier that now could provide rich user interface and also invoke enterprise resources directly.&lt;/p&gt;
+
+&lt;p&gt;With these advancements, REST based services made much more sense than the SOAP services. Roy Fielding’s REST architectural style that was envisioned for World Wide Web became more relevant to manage both html templates as well as the data to fill those templates.&lt;/p&gt;
+
+&lt;p&gt;Extend this to mobile and other devices that have built in support for JSON, it makes perfect sense to use REST based architecture that provides uniform access to channels – existing or new.&lt;/p&gt;
+
+&lt;h4 id=&quot;3-web-apis-is-a-channel-strategy&quot;&gt;3) Web APIs is a Channel Strategy&lt;/h4&gt;
+
+&lt;p&gt;It is important to note that REST based web APIs are mostly part of &lt;em&gt;channel strategy&lt;/em&gt; whereas SOA has traditionally been used for &lt;em&gt;enterprise integration&lt;/em&gt;. Yes, APIs can be used to wire enterprise applications, or web services can be exposed for digital channels but there is fundamental difference between the two. Channels typically require data to be mashed together which is easier if based on &lt;em&gt;resources&lt;/em&gt; than on &lt;em&gt;verb&lt;/em&gt;-based services.&lt;/p&gt;
+
+&lt;p&gt;Also, APIs are about openness and innovation beyond enterprise boundaries. This require lean-ness in governance, ease of discoverability and so on. The way we have been governing web services, cannot meet that expectation.&lt;/p&gt;
+
+&lt;h4 id=&quot;4-performance-and-scalability&quot;&gt;4) Performance and Scalability&lt;/h4&gt;
+&lt;p&gt;Verboseness of XML increases consumption of computational and network resources. This become more important when applications are chattier. Chattiness is the very nature of the digital applications where user experience takes the centerstage. We need smaller payloads but with more network communication. Also, REST uses “GET” heavily (and SOAP does not) which is HTTP cacheable. Other aspect around performance that is usually discussed is stateless-ness of REST. In my opinion, SOAP services too are (or can be) stateless which makes this argument a little weaker. The only difference is that statelessness is &lt;em&gt;explicitly&lt;/em&gt; avoided by REST.&lt;/p&gt;
+
+&lt;h2&gt;Having established when and why REST is advantageous, let us see how this can be implemented in enterprises.&lt;/h2&gt;
+&lt;p&gt;There are two situations are typically encountered in organizations.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Ground up development of application&lt;/li&gt;
+  &lt;li&gt;Legacy systems that need to be exposed for digital consumption&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Let us discuss these two cases in detail.&lt;/p&gt;
+
+&lt;h4 id=&quot;ground-up-development&quot;&gt;Ground-up Development:&lt;/h4&gt;
+
+&lt;p&gt;This is most straightforward and top-down scenerio where services can be designed RESTful ground up. We define the API spec first and then create the implementation. How we design REST APIs is not scope of this post but I like &lt;a href=&quot;https://www.thoughtworks.com/insights/blog/rest-api-design-resource-modeling&quot;&gt;this&lt;/a&gt; and &lt;a href=&quot;http://www.vinaysahni.com/best-practices-for-a-pragmatic-restful-api&quot;&gt;this&lt;/a&gt; as starting point. Three fundamental rules in my experience, are i) APIs are not mere CRUD operations over HTTP. ii) Granularity of API is contextual to the problem domain. iii) It is okay to convert some “Verbs” as “Nouns” as long as we have enterprise-wide formal guidance that describes where to draw the line.&lt;/p&gt;
+
+&lt;h4&gt;Legacy systems that need to be exposed to digital consumption:&lt;/h4&gt;
+
+&lt;p&gt;In large enterprises, there are tons of legacy applications (e.g. mainframes based, client server or fifteen years old java based applications) that are core to the business. Re-engineering these applications just for RESTification is not always business justifiable. Digital initiatives, however, do provide opportunities to piggy-back the RESTification exercise. It is important to note that digital platforms by themselves do not necessitate usage of REST architecture. There is affinity towards JSON based payloads which can be achieved without REST. In fact, organizations in last few years have chosen to create JSON service wrappers (over existing web services etc) to meet needs of mobile and other RIA platforms.&lt;/p&gt;
+
+&lt;p&gt;Assuming that benefits of REST usage are well justfied (some discussed above), following is an approach that can be considered. Here, I also like to mention &lt;a href=&quot;https://martinfowler.com/articles/richardsonMaturityModel.html&quot;&gt;Richardson Maturity Model&lt;/a&gt; for REST strategy. In my opinion, in large enterprises it can take years to jump from one maturity level to the next as prescribed in this (or my understanding of it..). It may be more beneficial to seggregate API layer from the underlying systems as described below (in progress).&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Step-1:&lt;/em&gt; Identify the resources from the legacy systems. These could be extracted from existing documentation or code. It is comparatively easy to identify resources from applications that are built on object-oriented design. Besides resource identification, we need to determine the relationship among the resources.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Step-2:&lt;/em&gt; Once we have identify the resources, next comes the ownership. Though resource identification and their ownership can go hand in hand, It is  important to understand that just because a resource is found in an LOB application, does not mean it belongs there(Example: A “Customer” resource in a multi-LOB organization). And vice versa. In addition, there can be resource hierarchy that needs to be established.&lt;/p&gt;
+
+&lt;p&gt;This leads to discussion on where we start with REST in organizations. In an ideal situation, it should enterprise wide initiative. At the bare minimum, the guidance and enterprise-wide governace aspects must be chalked out upfront.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Step-3:&lt;/em&gt; For the identified resources, we now need to map existing service operations to HTTP verbs. This is the most complex part of this exercise. We may end up creating new resources or “blend resources” in the process.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Step-4:&lt;/em&gt; Formalize the API specification. While performing above three steps, we are essentially modelling our APIs from the existing implementation in a bottom-up way. Extracting a formal definition of API is needed so that it can be shared with the API consumers.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Step-5:&lt;/em&gt; Once we have the API specification with resources and verbs defined, next comes the implementation of API layer. API implementation in this case merely means to create layer that expose an endpoint as per the API spec and wire it with existing underlying resources. Commercial API Lifecycle management suites can ease this work. Most of these products also support industry specifications for APIs, provided lifecycle management services and add other digital capabilities. It however is not necessary to use any commerical tool to wire API layer with enterprise legacy resources. Whether to use one or create a custom API layer will be discussed in another post.&lt;/p&gt;
+
+&lt;p&gt;Feel free to comment.&lt;/p&gt;
+
+    &lt;/div&gt;
+</description>
+        <pubDate>Wed, 16 Mar 2016 22:09:18 +0530</pubDate>
+        <link>http://localhost:4000/blog/2016/why-how-rest-enterprise/</link>
+        <guid isPermaLink="true">http://localhost:4000/blog/2016/why-how-rest-enterprise/</guid>
+        
+        <category>API</category>
+        
+        
+        <category>API</category>
+        
+      </item>
+    
+      <item>
+        <title>APIs in P&amp;C Insurance Industry</title>
+        <description>&lt;div class=&quot;post-content&quot;&gt;
+      &lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+
+    &lt;!-- Custom CSS --&gt;
+    &lt;!-- &lt;link href=&quot;css/font-awesome-4.5.0/css/font-awesome.min.css&quot; rel=&quot;stylesheet&quot;&gt; --&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css&quot; /&gt;
+&lt;!--     &lt;link href=&quot;css/simple-sidebar.css&quot; rel=&quot;stylesheet&quot;&gt;
+ --&gt;
+    &lt;!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries --&gt;
+    &lt;!-- WARNING: Respond.js doesn't work if you view the page via file:// --&gt;
+    &lt;!--[if lt IE 9]&gt;
+        &lt;script src=&quot;https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js&quot;&gt;&lt;/script&gt;
+        &lt;script src=&quot;https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js&quot;&gt;&lt;/script&gt;
+    &lt;![endif]--&gt;
+
+&lt;/head&gt;
+
+&lt;body&gt;
+    &lt;div id=&quot;wrapper&quot;&gt;
+        &lt;!-- Page Content --&gt;
+        &lt;div id=&quot;page-content-wrapper&quot;&gt;
+            &lt;div class=&quot;container-fluid&quot;&gt;
+                
+                &lt;div class=&quot;row&quot;&gt;
+                    &lt;div class=&quot;col-lg-12&quot;&gt; 
+                        
+                        &lt;div class=&quot;target&quot;&gt;
+                            &lt;!-- &lt;a href=&quot;#menu-toggle&quot; class=&quot;btn btn-default&quot; id=&quot;menu-toggle&quot;&gt;Toggle Menu&lt;/a&gt; --&gt;
+ &lt;!-- About--&gt;
+                          &lt;div id=&quot;about&quot;&gt;  
+                            &lt;p&gt;Insurance industry is seeing increasing usage of public APIs. 
+                            The current interactions between insurance organizations, partners, distributors, regulatory entities etc. 
+                            provide innovative ways to use APIs both in private and public space. Additionally, technology advances (IoT, vehile telematics etc) 
+                            are making organizations adopt API centric integration strategies.
+                            &lt;br /&gt;
+                            &lt;br /&gt;
+                            Currrently, not many in industry (insurers and others) have publicly exposed APIs. 
+                            However, this will change in coming years as value in API-fying the assets becomes more visible.
+                             &lt;br /&gt;
+                            &lt;br /&gt;
+                            &lt;b&gt; &lt;font color=&quot;red&quot;&gt; NOTE: I am not actively working on this list anymore. &lt;/font&gt;&lt;/b&gt;
+                            &lt;br /&gt;
+                            &lt;/p&gt;
+                          &lt;/div&gt;
+
+ &lt;!-- Auto--&gt;
+                        &lt;div id=&quot;auto&quot;&gt;
+                            &lt;h1&gt;Vehicle APIs&lt;/h1&gt;
+                            &lt;p&gt;There is array of automotive datasets that can provide intellengence built in modern cars. 
+                            From vehicle specifications to on-the-road data, modern cars are equipped to generate data that can provide meanigful insight.
+                            &lt;br /&gt;&lt;br /&gt;
+                            Following are some of the APIs that are available for public consumption.
+                            &lt;/p&gt; 
+                            &lt;div class=&quot;bs-example&quot;&gt;
+                            &lt;table class=&quot;table&quot;&gt;
+                                &lt;thead&gt;
+                                    &lt;tr&gt;
+                                        &lt;th&gt;No.&lt;/th&gt;
+                                        &lt;th&gt;API Provider&lt;/th&gt;
+                                        &lt;th&gt;Details&lt;/th&gt;
+                                    &lt;/tr&gt;
+                                &lt;/thead&gt;
+                                &lt;tbody&gt;
+                                    &lt;tr class=&quot;active&quot;&gt;
+                                        &lt;td&gt;1&lt;/td&gt;
+                                        &lt;td&gt;&lt;a href=&quot;http://developer.gm.com/&quot; target=&quot;_blank&quot;&gt; General Motors&lt;/a&gt;&lt;/td&gt;
+                                        &lt;td&gt;Manufacturer - GM APIs for cars&lt;/td&gt;
+                                    &lt;/tr&gt;
+                                    &lt;tr class=&quot;active&quot;&gt;
+                                        &lt;td&gt;2&lt;/td&gt;
+                                        &lt;td&gt;&lt;a href=&quot;https://developer.ford.com&quot; target=&quot;_blank&quot;&gt;Ford Motors&lt;/a&gt;&lt;/td&gt;
+                                        &lt;td&gt;Manufacturer - Ford motors&lt;/td&gt;
+                                    &lt;/tr&gt;
+                                    &lt;tr class=&quot;active&quot;&gt;
+                                        &lt;td&gt;3&lt;/td&gt;
+                                        &lt;td&gt;&lt;a href=&quot;http://docs.timdorr.apiary.io/#&quot; target=&quot;_blank&quot;&gt;Tesla Motors&lt;/a&gt;&lt;/td&gt;
+                                        &lt;td&gt;Manufacturer - Tesla motors (unofficial APIs)&lt;/td&gt;
+                                    &lt;/tr&gt;
+                                    &lt;tr class=&quot;active&quot;&gt;
+                                        &lt;td&gt;4&lt;/td&gt;
+                                        &lt;td&gt;&lt;a href=&quot;https://developer.hondasvl.com/#development&quot; target=&quot;_blank&quot;&gt;Honda&lt;/a&gt;&lt;/td&gt;
+                                        &lt;td&gt;Manufacturer - Honda Developer Studio&lt;/td&gt;
+                                    &lt;/tr&gt;
+                                    &lt;tr class=&quot;active&quot;&gt;
+                                        &lt;td&gt;5&lt;/td&gt;
+                                        &lt;td&gt;&lt;a href=&quot;http://www.800bluebook.com/dealer-solutions/data-syndication/&quot; target=&quot;_blank&quot;&gt; KBB &lt;/a&gt;&lt;/td&gt;
+                                        &lt;td&gt;Kelly Blue book&lt;/td&gt;
+                                    &lt;/tr&gt;
+                                    &lt;tr class=&quot;active&quot;&gt;
+                                        &lt;td&gt;6&lt;/td&gt;
+                                        &lt;td&gt;&lt;a href=&quot;http://developer.edmunds.com/&quot; target=&quot;_blank&quot;&gt; Edmunds Vehicle APIs  &lt;/a&gt;&lt;/td&gt;
+                                        &lt;td&gt;Edmunds Vehicle APIs for cars&lt;/td&gt;
+                                    &lt;/tr&gt;
+
+                                    &lt;tr class=&quot;active&quot;&gt;
+                                        &lt;td&gt;8&lt;/td&gt;
+                                        &lt;td&gt;&lt;a href=&quot;https://dash.by/developers.html&quot; target=&quot;_blank&quot;&gt; Dash Chasis API &lt;/a&gt;&lt;/td&gt;
+                                        &lt;td&gt;A Connected Car Platform&lt;/td&gt;
+                                    &lt;/tr&gt;
+                                    &lt;tr class=&quot;active&quot;&gt;
+                                        &lt;td&gt;9&lt;/td&gt;
+                                        &lt;td&gt;&lt;a href=&quot;http://docs.carvoyant.com/en/latest/&quot; target=&quot;_blank&quot;&gt;Carvoyant &lt;/a&gt;&lt;/td&gt;
+                                        &lt;td&gt;A connected Car Platform&lt;/td&gt;
+                                    &lt;/tr&gt;
+                                    &lt;tr class=&quot;active&quot;&gt;
+                                        &lt;td&gt;10&lt;/td&gt;
+                                        &lt;td&gt;&lt;a href=&quot;http://developer.cars.com/apis&quot; target=&quot;_blank&quot;&gt;cars.com &lt;/a&gt;&lt;/td&gt;
+                                        &lt;td&gt;Portal for Car shoppers and owners&lt;/td&gt;
+                                    &lt;/tr&gt;
+
+                                &lt;/tbody&gt;
+                            &lt;/table&gt;
+                        &lt;/div&gt;     
+                        &lt;/div&gt;
+ &lt;!-- Insurer--&gt;
+                        &lt;div id=&quot;insurer&quot;&gt;
+                            &lt;h1&gt;Insurer APIs&lt;/h1&gt;
+                            &lt;p&gt;These are the APIs that could potentially be exposed by P&amp;amp;C insurers to public.
+                            Some of the APIs carry customer sensitive information and need to be secured differently from consumption standpoint.
+                            &lt;br /&gt;
+                            &lt;br /&gt;
+                            NOTE: &lt;i&gt;&lt;a href=&quot;http://developer.allstate.com&quot; target=&quot;_blank&quot;&gt; Allstate Insurance &lt;/a&gt;  &lt;/i&gt; is  good example 
+                            among insurers, who is its exposing APIs. 
+                            &lt;/p&gt; 
+                            &lt;div class=&quot;bs-example&quot;&gt;
+                            &lt;table class=&quot;table&quot;&gt;
+                                &lt;thead&gt;
+                                    &lt;tr&gt;
+                                        &lt;th&gt;No.&lt;/th&gt;
+                                        &lt;th&gt;API&lt;/th&gt;
+                                        &lt;th&gt;Details&lt;/th&gt;
+                                    &lt;/tr&gt;
+                                &lt;/thead&gt;
+                                &lt;tbody&gt;
+                                    &lt;tr class=&quot;active&quot;&gt;
+                                        &lt;td&gt;1&lt;/td&gt;
+                                        &lt;td&gt;&lt;a href=&quot;#&quot;&gt; Get Quote&lt;/a&gt;&lt;/td&gt;
+                                        &lt;td&gt;API to get insurance quote&lt;/td&gt;
+                                    &lt;/tr&gt;
+                                    &lt;tr class=&quot;active&quot;&gt;
+                                        &lt;td&gt;2&lt;/td&gt;
+                                        &lt;td&gt;&lt;a href=&quot;#&quot;&gt; Get Product Details &lt;/a&gt;&lt;/td&gt;
+                                        &lt;td&gt;Retrieve insurance product details&lt;/td&gt;
+                                    &lt;/tr&gt;
+                                    &lt;tr class=&quot;active&quot;&gt;
+                                        &lt;td&gt;3&lt;/td&gt;
+                                        &lt;td&gt;&lt;a href=&quot;#&quot;&gt; Address &amp;amp; Contacts&lt;/a&gt;&lt;/td&gt;
+                                        &lt;td&gt;Provides Insurers' locations, contact details, agent information and so on&lt;/td&gt;
+                                    &lt;/tr&gt;
+                                    &lt;tr class=&quot;active&quot;&gt;
+                                        &lt;td&gt;4&lt;/td&gt;
+                                        &lt;td&gt;&lt;a href=&quot;#&quot;&gt;Customer Profile&lt;/a&gt;&lt;/td&gt;
+                                        &lt;td&gt;*Retrieve customer details&lt;/td&gt;
+                                    &lt;/tr&gt;
+                                    &lt;tr class=&quot;active&quot;&gt;
+                                        &lt;td&gt;5&lt;/td&gt;
+                                        &lt;td&gt;&lt;a href=&quot;#&quot;&gt;Policy Details&lt;/a&gt;&lt;/td&gt;
+                                        &lt;td&gt;*Provide policy details, renewal information of customer&lt;/td&gt;
+                                    &lt;/tr&gt;
+                                    &lt;tr class=&quot;active&quot;&gt;
+                                        &lt;td&gt;6&lt;/td&gt;
+                                        &lt;td&gt;&lt;a href=&quot;#&quot;&gt;Claim Status&lt;/a&gt;&lt;/td&gt;
+                                        &lt;td&gt;*Provide details of claims by claim Number&lt;/td&gt;
+                                    &lt;/tr&gt;
+                                    &lt;tr class=&quot;active&quot;&gt;
+                                        &lt;td&gt;7&lt;/td&gt;
+                                        &lt;td&gt;&lt;a href=&quot;#&quot;&gt;Vehicle Details&lt;/a&gt;&lt;/td&gt;
+                                        &lt;td&gt;*Provide insured vehilce details, telematics data&lt;/td&gt;
+                                    &lt;/tr&gt;
+                                &lt;/tbody&gt;
+                            &lt;/table&gt;
+                        &lt;/div&gt;    
+                        &lt;br /&gt;
+                        &lt;/div&gt;
+ &lt;!-- vendors--&gt;
+                        &lt;div id=&quot;vendors&quot;&gt;
+                            &lt;h1&gt;Vendor APIs&lt;/h1&gt;
+                            &lt;p&gt;Vendor APIs that are relevant in B2B scenerios in insurance industry. These are commonly used services in P&amp;amp;C industry in USA. Some of them have
+                            have made progress in exposing their APIs publicly.        
+                            &lt;/p&gt; 
+                            &lt;div class=&quot;bs-example&quot;&gt;
+                            &lt;table class=&quot;table&quot;&gt;
+                                &lt;thead&gt;
+                                    &lt;tr&gt;
+                                        &lt;th&gt;No.&lt;/th&gt;
+                                        &lt;th&gt;Service Provided&lt;/th&gt;
+                                        &lt;th&gt;Service Detail&lt;/th&gt;
+                                        &lt;th&gt;Vendor with open APIs&lt;/th&gt;
+                                    &lt;/tr&gt;
+                                &lt;/thead&gt;
+                                &lt;tbody&gt;
+                                    &lt;tr class=&quot;active&quot;&gt;
+                                        &lt;td&gt;1&lt;/td&gt;
+                                        &lt;td&gt;Glass repair&lt;/td&gt;
+                                        &lt;td&gt;Vendor providing glass repair for automobiles &lt;/td&gt;                                                                               
+                                        &lt;td&gt;&lt;a href=&quot;https://market.mashape.com/windshieldrepairtech/windshield-repair-tech-auto-glass&quot; target=&quot;_blank&quot;&gt;Safelite&lt;/a&gt;&lt;/td&gt;
+                                    &lt;/tr&gt;
+                                   &lt;tr class=&quot;active&quot;&gt;
+                                        &lt;td&gt;2&lt;/td&gt;
+                                        &lt;td&gt;Fraud Details&lt;/td&gt;
+                                        &lt;td&gt;Fraud details needed while underwriting&lt;/td&gt;
+                                        &lt;td&gt;&lt;a href=&quot;https://www.lexisnexis.com/webserviceskit/&quot; target=&quot;_blank&quot;&gt;LexisNexis&lt;/a&gt;&lt;/td&gt;
+                                    &lt;/tr&gt;       
+                                   &lt;tr class=&quot;active&quot;&gt;
+                                        &lt;td&gt;3&lt;/td&gt;
+                                        &lt;td&gt;Vehicle Damage estimation&lt;/td&gt;
+                                        &lt;td&gt;Vehicle Damage estimation&lt;/td&gt;
+                                        &lt;td&gt;
+                                            Certified Collateral Corporation (CCC) &amp;lt;/br&amp;gt;
+                                            Audatex &amp;lt;/br&amp;gt;
+                                            Xactware (Property) &amp;lt;/br&amp;gt; 
+                                            Service Power &amp;lt;/br&amp;gt;
+                                         &lt;/td&gt;
+                                    &lt;/tr&gt;
+                                   &lt;tr class=&quot;active&quot;&gt;
+                                        &lt;td&gt;4&lt;/td&gt;
+                                        &lt;td&gt;Injury estimation&lt;/td&gt;
+                                        &lt;td&gt;Injury Damage estimation&lt;/td&gt;
+                                        &lt;td&gt;
+                                            Auto Injury Solutions (AIS) &amp;lt;/br&amp;gt;
+                                            Colossus &amp;lt;/br&amp;gt;
+                                         &lt;/td&gt;
+                                    &lt;/tr&gt;
+                                   &lt;tr class=&quot;active&quot;&gt;
+                                        &lt;td&gt;5&lt;/td&gt;
+                                        &lt;td&gt;Car Rental&lt;/td&gt;
+                                        &lt;td&gt;Car Rental&lt;/td&gt;
+                                        &lt;td&gt;&lt;a href=&quot;http://developer.hotwire.com/docs/read/Rental_Car_Shopping_API&quot; target=&quot;_blank&quot;&gt;Hotwire&lt;/a&gt;&lt;/td&gt;
+                                    &lt;/tr&gt;  
+                                   &lt;tr class=&quot;active&quot;&gt;
+                                        &lt;td&gt;6&lt;/td&gt;
+                                        &lt;td&gt;Salvage Totalled vehicle&lt;/td&gt;
+                                        &lt;td&gt;Salvage Totalled vehicle&lt;/td&gt;
+                                        &lt;td&gt;
+                                            Copart &amp;lt;/br&amp;gt;
+                                            Insurance Auto Auctions (IAA) &amp;lt;/br&amp;gt;
+                                            SNAPS &amp;lt;/br&amp;gt; 
+                                         &lt;/td&gt;
+                                    &lt;/tr&gt;  
+                                   &lt;tr class=&quot;active&quot;&gt;
+                                        &lt;td&gt;7&lt;/td&gt;
+                                        &lt;td&gt;Earthquake&lt;/td&gt;
+                                        &lt;td&gt;Vulnerability for earthquake&lt;/td&gt;
+                                        &lt;td&gt;California Earthquake Authority (CEA)&lt;/td&gt;
+                                    &lt;/tr&gt;                                             
+                                   &lt;tr class=&quot;active&quot;&gt;
+                                        &lt;td&gt;8&lt;/td&gt;
+                                        &lt;td&gt;Weather Data&lt;/td&gt;
+                                        &lt;td&gt;Weather Data&lt;/td&gt;
+                                        &lt;td&gt;&lt;a href=&quot;http://wdtinc.com/product-service/maps/&quot; target=&quot;_blank&quot;&gt;Weather Decision Technologies (WDT)&lt;/a&gt;&lt;/td&gt;
+                                    &lt;/tr&gt;  
+                                   &lt;tr class=&quot;active&quot;&gt;
+                                        &lt;td&gt;9&lt;/td&gt;
+                                        &lt;td&gt;Credit MMR CLUE&lt;/td&gt;
+                                        &lt;td&gt;Credit MMR CLUE&lt;/td&gt;
+                                         &lt;td&gt;
+                                            &lt;a href=&quot;https://www.lexisnexis.com/webserviceskit/&quot; target=&quot;_blank&quot;&gt;NexisLexis&lt;/a&gt;&amp;lt;/br&amp;gt;
+                                            Equifax &amp;lt;/br&amp;gt;
+                                            ChoicePoint &amp;lt;/br&amp;gt; 
+                                         &lt;/td&gt;
+                                    &lt;/tr&gt;
+                                   &lt;tr class=&quot;active&quot;&gt;
+                                        &lt;td&gt;10&lt;/td&gt;
+                                        &lt;td&gt;Property Information&lt;/td&gt;
+                                        &lt;td&gt;Property Information&lt;/td&gt;
+                                         &lt;td&gt;
+                                            &lt;a href=&quot;https://api.iihs.org/docs&quot; target=&quot;_blank&quot;&gt;ISO APLUS&lt;/a&gt;&amp;lt;/br&amp;gt;
+                                            HLDI &amp;lt;/br&amp;gt;
+                                        &lt;/td&gt;
+                                    &lt;/tr&gt;
+                                   &lt;tr class=&quot;active&quot;&gt;
+                                        &lt;td&gt;11&lt;/td&gt;
+                                        &lt;td&gt;Territory codes&lt;/td&gt;
+                                        &lt;td&gt;Territory codes&lt;/td&gt;
+                                        &lt;td&gt;
+                                            GIS &amp;lt;/br&amp;gt;
+                                            LexisNexis &amp;lt;/br&amp;gt; 
+                                         &lt;/td&gt;
+
+                                    &lt;/tr&gt;
+                                   &lt;tr class=&quot;active&quot;&gt;
+                                        &lt;td&gt;12&lt;/td&gt;
+                                        &lt;td&gt;Home characteristics data &lt;/td&gt;
+                                        &lt;td&gt;Home characteristics data &lt;/td&gt;
+                                        &lt;td&gt;
+                                            MSB &amp;lt;/br&amp;gt;
+                                            XACTWARE &amp;lt;/br&amp;gt; 
+                                         &lt;/td&gt;
+                                    &lt;/tr&gt;
+                                   &lt;tr class=&quot;active&quot;&gt;
+                                        &lt;td&gt;13&lt;/td&gt;
+                                        &lt;td&gt;Home Inspection&lt;/td&gt;
+                                        &lt;td&gt;Home Inspection&lt;/td&gt;
+                                        &lt;td&gt;
+                                            Castle &amp;lt;/br&amp;gt;
+                                            Muller &amp;lt;/br&amp;gt;
+                                            National  &amp;lt;/br&amp;gt;
+                                         &lt;/td&gt;
+                                    &lt;/tr&gt; 
+                                    &lt;tr class=&quot;active&quot;&gt;
+                                        &lt;td&gt;14&lt;/td&gt;
+                                        &lt;td&gt;Geo Data&lt;/td&gt;
+                                        &lt;td&gt;Geo coding,Product suspension, Rating territory determination, Property risk assessment, etc&lt;/td&gt;
+                                        &lt;td&gt;&lt;a href=&quot;https://developers.arcgis.com/en/&quot; target=&quot;_blank&quot;&gt;ESRI&lt;/a&gt;&lt;/td&gt;
+                                    &lt;/tr&gt; 
+                                    &lt;tr class=&quot;active&quot;&gt;
+                                        &lt;td&gt;15&lt;/td&gt;
+                                        &lt;td&gt;Vehicle History&lt;/td&gt;
+                                        &lt;td&gt;Vehicle history based on VIN&lt;/td&gt;
+                                        &lt;td&gt;&lt;a href=&quot;#&quot; target=&quot;_blank&quot;&gt;Carfax&lt;/a&gt;&lt;/td&gt;
+                                    &lt;/tr&gt; 
+                                    &lt;tr class=&quot;active&quot;&gt;
+                                        &lt;td&gt;16&lt;/td&gt;
+                                        &lt;td&gt;FAX&lt;/td&gt;
+                                        &lt;td&gt;Send Fax&lt;/td&gt;
+                                        &lt;td&gt;&lt;a href=&quot;https://apiforums.easylink.com/emapidocs/&quot; target=&quot;_blank&quot;&gt;Easylink&lt;/a&gt;&lt;/td&gt;
+                                    &lt;/tr&gt;
+                                    &lt;tr class=&quot;active&quot;&gt;
+                                        &lt;td&gt;17&lt;/td&gt;
+                                        &lt;td&gt;Addess Standardization&lt;/td&gt;
+                                        &lt;td&gt;Addess Standardization&lt;/td&gt;
+                                         &lt;td&gt;
+                                            &lt;a href=&quot;http://reference.mapinfo.com/software/spatial_server/english/1_0/onprem/Spatial_Server_1.0_EGM_APIGuide.pdf&quot; target=&quot;_blank&quot;&gt;Map Info&lt;/a&gt;&amp;lt;/br&amp;gt;
+                                            LexisNexis&amp;lt;/br&amp;gt;
+                                        &lt;/td&gt;
+                                    &lt;/tr&gt;
+                                    &lt;tr class=&quot;active&quot;&gt;
+                                        &lt;td&gt;18&lt;/td&gt;
+                                        &lt;td&gt;eSignature&lt;/td&gt;
+                                        &lt;td&gt;eSignature&lt;/td&gt;
+                                        &lt;td&gt;&lt;a href=&quot;https://developer.e-signlive.com/&quot; target=&quot;_blank&quot;&gt;Silanis&lt;/a&gt;&lt;/td&gt;
+                                    &lt;/tr&gt;
+                                    &lt;tr class=&quot;active&quot;&gt;
+                                        &lt;td&gt;19&lt;/td&gt;
+                                        &lt;td&gt;Census Data&lt;/td&gt;
+                                        &lt;td&gt;Census data used in determining loss and retention factors&lt;/td&gt;
+                                        &lt;td&gt;Woods &amp;amp; Poole&lt;/td&gt;
+                                    &lt;/tr&gt; 
+                                    &lt;tr class=&quot;active&quot;&gt;
+                                        &lt;td&gt;20&lt;/td&gt;
+                                        &lt;td&gt;Customer Data Prefill&lt;/td&gt;
+                                        &lt;td&gt;Customer Data Prefill&lt;/td&gt;
+                                         &lt;td&gt;&lt;a href=&quot;https://developer.myacxiom.com/&quot; target=&quot;_blank&quot;&gt;AXIOM&lt;/a&gt;&lt;/td&gt;
+                                    &lt;/tr&gt; 
+                                &lt;/tbody&gt;
+                            &lt;/table&gt;
+                        &lt;/div&gt;     
+                        &lt;/div&gt;
+ &lt;!-- Value Add Services--&gt;
+                        &lt;div id=&quot;valueadds&quot;&gt;
+                            &lt;h1&gt;Value Added Services&lt;/h1&gt;
+                            &lt;p&gt;These services are mostly outside insurance contract with the customer, but are relevant
+                            due to their peripheral nature to insurance. 
+
+                            &lt;/p&gt; 
+                            &lt;div class=&quot;bs-example&quot;&gt;
+                            &lt;table class=&quot;table&quot;&gt;
+                                &lt;thead&gt;
+                                    &lt;tr&gt;
+                                        &lt;th&gt;No.&lt;/th&gt;
+                                        &lt;th&gt;Potential API&lt;/th&gt;
+                                        &lt;th&gt;Details&lt;/th&gt;
+                                    &lt;/tr&gt;
+                                &lt;/thead&gt;
+                                &lt;tbody&gt;
+                                    &lt;tr class=&quot;active&quot;&gt;
+                                        &lt;td&gt;1&lt;/td&gt;
+                                        &lt;td&gt;Extended Vehicle Protection Program&lt;/td&gt;
+                                        &lt;td&gt;&lt;a href=&quot;#&quot; target=&quot;_blank&quot;&gt;TBD&lt;/a&gt;&lt;/td&gt;                                        
+                                    &lt;/tr&gt;
+                                    &lt;tr class=&quot;active&quot;&gt;
+                                        &lt;td&gt;2&lt;/td&gt;
+                                        &lt;td&gt; Driver Training, Good Student, Defensive Driving, New vehicle Driving&lt;/td&gt;
+                                        &lt;td&gt;&lt;a href=&quot;#&quot; target=&quot;_blank&quot;&gt;TBD&lt;/a&gt;&lt;/td&gt;                                        
+                                    &lt;/tr&gt;
+                                    &lt;tr class=&quot;active&quot;&gt;
+                                        &lt;td&gt;3&lt;/td&gt;
+                                        &lt;td&gt;Total Loss Protection&lt;/td&gt;
+                                        &lt;td&gt;&lt;a href=&quot;#&quot; target=&quot;_blank&quot;&gt;TBD&lt;/a&gt;&lt;/td&gt;                                        
+                                    &lt;/tr&gt;
+                                    &lt;tr class=&quot;active&quot;&gt;
+                                        &lt;td&gt;4&lt;/td&gt;
+                                        &lt;td&gt;Debt Protection&lt;/td&gt;
+                                        &lt;td&gt;&lt;a href=&quot;#&quot; target=&quot;_blank&quot;&gt;TBD&lt;/a&gt;&lt;/td&gt;                                        
+                                    &lt;/tr&gt;
+                                    &lt;tr class=&quot;active&quot;&gt;
+                                        &lt;td&gt;5&lt;/td&gt;
+                                        &lt;td&gt;Home Movers&lt;/td&gt;
+                                        &lt;td&gt;&lt;a href=&quot;#&quot; target=&quot;_blank&quot;&gt;TBD&lt;/a&gt;&lt;/td&gt;                                        
+                                    &lt;/tr&gt;
+                                    &lt;tr class=&quot;active&quot;&gt;
+                                        &lt;td&gt;7&lt;/td&gt;
+                                        &lt;td&gt;Home Buy &amp;amp; Sell recommendations, Mortgage&lt;/td&gt;
+                                        &lt;td&gt;&lt;a href=&quot;#&quot; target=&quot;_blank&quot;&gt;TBD&lt;/a&gt;&lt;/td&gt;                                        
+                                    &lt;/tr&gt;
+                                    &lt;tr class=&quot;active&quot;&gt;
+                                        &lt;td&gt;8&lt;/td&gt;
+                                        &lt;td&gt;Financing&lt;/td&gt;
+                                        &lt;td&gt;&lt;a href=&quot;#&quot; target=&quot;_blank&quot;&gt;TBD&lt;/a&gt;&lt;/td&gt;                                        
+                                    &lt;/tr&gt;                                                                                                                                                                                                                        
+                                &lt;/tbody&gt;
+                            &lt;/table&gt;
+                        &lt;/div&gt;     
+                        &lt;/div&gt;
+&lt;!-- Safety--&gt;
+                        &lt;div id=&quot;safety&quot;&gt;
+                            &lt;h1&gt;Safety APIs&lt;/h1&gt;
+                            &lt;p&gt;Safety related APIs (education content as well as services), for home and vehicle insurance.
+                            &lt;/p&gt; 
+                            &lt;div class=&quot;bs-example&quot;&gt;
+                            &lt;table class=&quot;table&quot;&gt;
+                                &lt;thead&gt;
+                                    &lt;tr&gt;
+                                        &lt;th&gt;No.&lt;/th&gt;
+                                        &lt;th&gt;Potential APIs&lt;/th&gt;
+                                        &lt;th&gt;Details&lt;/th&gt;
+                                    &lt;/tr&gt;
+                                &lt;/thead&gt;
+                                &lt;tbody&gt;
+                                    &lt;tr class=&quot;active&quot;&gt;
+                                        &lt;td&gt;1&lt;/td&gt;
+                                        &lt;td&gt;Self Risk Assessment&lt;/td&gt;
+                                        &lt;td&gt;Self Risk Assessment - driving, weather risk for homes&lt;/td&gt;                                        
+                                    &lt;/tr&gt;
+                                    &lt;tr class=&quot;active&quot;&gt;
+                                        &lt;td&gt;2&lt;/td&gt;
+                                        &lt;td&gt;Teen Safety&lt;/td&gt;
+                                        &lt;td&gt;Teen driving safety programs&lt;/td&gt;                                        
+                                    &lt;/tr&gt;
+                                    &lt;tr class=&quot;active&quot;&gt;
+                                        &lt;td&gt;3&lt;/td&gt;
+                                        &lt;td&gt;Safe driving&lt;/td&gt;
+                                        &lt;td&gt;Safe driving &lt;/td&gt;                                        
+                                    &lt;/tr&gt;
+                                    &lt;tr class=&quot;active&quot;&gt;
+                                        &lt;td&gt;3&lt;/td&gt;
+                                        &lt;td&gt;Home Safety&lt;/td&gt;
+                                        &lt;td&gt;disaster preparedness, fire safety. &lt;/td&gt;                                        
+                                    &lt;/tr&gt;
+
+                                    &lt;tr class=&quot;active&quot;&gt;
+                                        &lt;td&gt;4&lt;/td&gt;
+                                        &lt;td&gt;NHTSA&lt;/td&gt;
+                                        &lt;td&gt;&lt;a href=&quot;http://www.nhtsa.gov/Vehicle+Safety&quot; target=&quot;_blank&quot;&gt;National Highway Traffic Safety: Consumer Safety Advisory - Counterfeit Airbags&lt;/a&gt;&lt;/td&gt;                                        
+                                    &lt;/tr&gt;                                                                                                                                                                                                                                                           
+                                &lt;/tbody&gt;
+                            &lt;/table&gt;
+                        &lt;/div&gt;     
+                        &lt;/div&gt;
+&lt;!-- Governmental--&gt;
+                        &lt;div id=&quot;govt&quot;&gt;
+                            &lt;h1&gt;Government Data APIs&lt;/h1&gt;
+                            &lt;p&gt;There are numerous &lt;a href=&quot;http://catalog.data.gov/dataset?q=auto+insurance&amp;amp;sort=score+desc%2C+name+asc&amp;amp;ext_location=&amp;amp;ext_bbox=&amp;amp;ext_prev_extent=-183.515625%2C-50.28933925329178%2C-17.578125%2C63.23362741232569&quot;&gt; open datasets available &lt;/a&gt; from federal and state.  
+                            Added with core insurance data, these APIs can provide lots of value to insurance ecosystem.
+                            &lt;/p&gt;
+                        &lt;/div&gt;     
+&lt;!-- Safety--&gt;
+                        &lt;div id=&quot;utility&quot;&gt;
+                            &lt;h1&gt;Utility APIs&lt;/h1&gt;
+                            &lt;p&gt;These are are APIs available that have universal appeal. Some of the examples include
+                            maps, weather, online tools (barcode readers, email, photos, videos etc) and so on. 
+
+                            &lt;/p&gt; 
+                            &lt;div class=&quot;bs-example&quot;&gt;
+                            &lt;table class=&quot;table&quot;&gt;
+                                &lt;thead&gt;
+                                    &lt;tr&gt;
+                                        &lt;th&gt;No.&lt;/th&gt;
+                                        &lt;th&gt;API&lt;/th&gt;
+                                        &lt;th&gt;Details&lt;/th&gt;
+                                    &lt;/tr&gt;
+                                &lt;/thead&gt;
+                                &lt;tbody&gt;
+                                    &lt;tr class=&quot;active&quot;&gt;
+                                        &lt;td&gt;1&lt;/td&gt;
+                                        &lt;td&gt;&lt;a href=&quot;https://developers.google.com/maps/?hl=en&quot; target=&quot;_blank&quot;&gt;Google maps
+                                        &lt;td&gt;Location, Direction etc&lt;/td&gt;                                        
+                                    
+                                    &lt;tr class=&quot;active&quot;&gt;
+                                        &lt;td&gt;2&lt;/td&gt;
+                                        &lt;td&gt;
+                                        &lt;a href=&quot;http://www.programmableweb.com/category/all/apis?category=20087&quot; target=&quot;_blank&quot;&gt;Social media
+                                        
+                                        &lt;td&gt;Multiple social media platforms that expose their data via APIs&lt;/td&gt;                                        
+                                   
+&lt;!-- /#wrapper --&gt;
+
+ &lt;!-- jQuery --&gt;
+   &lt;!-- jQuery --&gt;
+    &lt;script src=&quot;https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-alpha1/jquery.js&quot;&gt;&lt;/script&gt;
+    &lt;!-- Bootstrap Core JavaScript --&gt;
+    &lt;script src=&quot;https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js&quot;&gt;&lt;/script&gt;
+
+
+    &lt;!-- Menu Toggle Script --&gt;
+    &lt;script&gt;
+    $(&quot;#menu-toggle&quot;).click(function(e) {
+        e.preventDefault();
+        $(&quot;#wrapper&quot;).toggleClass(&quot;toggled&quot;);
+    });
+    &lt;/script&gt;
+
+&amp;lt;/body&amp;gt;
+
+&amp;lt;/html&amp;gt;
+&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;
+
+    &lt;/div&gt;
+</description>
+        <pubDate>Thu, 12 Nov 2015 22:09:18 +0530</pubDate>
+        <link>http://localhost:4000/blog/2015/pncapi-north-america/</link>
+        <guid isPermaLink="true">http://localhost:4000/blog/2015/pncapi-north-america/</guid>
+        
+        <category>API</category>
+        
+        
+        <category>API</category>
+        
+      </item>
+    
+  </channel>
+</rss>
