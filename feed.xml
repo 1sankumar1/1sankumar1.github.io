@@ -1,13 +1,80 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>end2end</title>
-    <description>A free Jekyll theme for download</description>
+    <title>Sanjeev Kumar</title>
+    <description>API Integration and Architecture</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 24 Jan 2018 17:26:03 +0530</pubDate>
-    <lastBuildDate>Wed, 24 Jan 2018 17:26:03 +0530</lastBuildDate>
-    <generator>Jekyll v3.5.2</generator>
+    <pubDate>Thu, 25 Jan 2018 17:48:25 +0530</pubDate>
+    <lastBuildDate>Thu, 25 Jan 2018 17:48:25 +0530</lastBuildDate>
+    <generator>Jekyll v3.5.1</generator>
+    
+      <item>
+        <title>API Analysis and Design Approach – The Zachman’s Way</title>
+        <description>&lt;p&gt;The basis of famous &lt;a href=&quot;https://www.zachman.com/about-the-zachman-framework&quot;&gt;Zachman’s framework&lt;/a&gt; lies in “perspectives” (row) and “focusses” (columns) of the grid, that are used to describe information technology. “Perspectives” provide levels of granularity in problem domain whereas “focus” is about primitive interrogatives (&lt;strong&gt;What, When, Why, How, Who, Where&lt;/strong&gt;). Once we familiarize ourselves with the framework, we realize that this is not limited to big IT problems in enterprises. It can be applied to any engineering problem in information technology (or outside). A problem well defined is problem half solved, and this framework provides a structured way to articulate it.&lt;/p&gt;
+
+&lt;p&gt;I have outlined how primitive interrogatives can be leveraged as a tool for API analysis and design, and how these enable us to ask right questions in the early phases of API development. These also help us think about the constraints in the problem domain. Even though the intent here is not to strictly follow or illustrate usage of Zachman’s framework, the details are around row # 3…ish, the “Architect Perspective”.&lt;/p&gt;
+
+&lt;p&gt;So let us get started. For an API to exist, we at least need two parties that need to exchange information. API can be generalized further, as we add more parties to the mix.&lt;/p&gt;
+
+&lt;p&gt;In Zachman’s terms:&lt;/p&gt;
+
+&lt;h4 id=&quot;who&quot;&gt;Who&lt;/h4&gt;
+
+&lt;p&gt;Who identifies the “actors”. This could be a “mobile application” that needs data from a single “enterprise data store” (or multiple aggregated stores), or a “partner” requesting quotation from a “business application” owned by the enterprise.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Example:&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;An e-commerce mobile application, used by customers, needs to retrieve “delivery addresses” from customer data store. “Mobile” application and “customer data store” are the actors exchanging information in this case. Mobile application prefers not to communicate using SOAP based xml, so that becomes a constraint.&lt;/p&gt;
+
+&lt;h4 id=&quot;why&quot;&gt;Why&lt;/h4&gt;
+&lt;p&gt;Why do these need to talk to each other? Does the caller needs information, or it provides information, or both? Is it one-way communication, two ways, or a call back?&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Example:&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;The context of communication could be multiple. In our example, retrieval of address book could be for a “selection” of a delivery address for the purchase, or to “verify” that certain address does exist in the address book, and add if it does not. Can service be generic enough to accommodate all these use cases? These questions help us understand the problem.&lt;/p&gt;
+
+&lt;h4 id=&quot;when&quot;&gt;When&lt;/h4&gt;
+&lt;p&gt;When do these applications communicate? When and what triggers the communication and how often.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Example:&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;The likelihood of alternate flow (“add new address”) as part of address retrieval, in example use case being invoked is more when new purchases are being made by the customers. This require holding “purchase” use case, jump to “add new address” and then continue with purchase completion. How do we couple such use cases? Can newly created address be updated asynchronously in “address book” as part of purchase? These are some of the poking questions, which need to be satisfied as part of analysis and design exercise.&lt;/p&gt;
+
+&lt;h4 id=&quot;what&quot;&gt;What&lt;/h4&gt;
+
+&lt;p&gt;What is the content and context of the information exchange? What is the sensitivity of content being transmitted?&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Example:&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;What does “address” object in our example entails? Can it accommodate address fields variations, if catering to multiple countries? What type of data it is going to be (SOAP, JSON, etc.). Is there a need to have one-time-use address, which need not be stored in the “address book” but is still required for shipment and tracking purpose?&lt;/p&gt;
+
+&lt;h4 id=&quot;where&quot;&gt;Where&lt;/h4&gt;
+&lt;p&gt;Where are application located. In relation to each other, are these located locally, remotely, on-premise, cloud or both? And so on. What implications could the location of application have on API led integration of applications? Within the API itself, there are variations. What do those mean to API design. An API wrapping a CICS transaction require different development strategy than building one ground up on micro-service architecture.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Example:&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;In our case, consumer is mobile applications connecting to a data source. We need to think about hops in between Mobile and actual data source. These could include CDN, Firewall, API gateway (if any) and similar intermediaries. What value each hop is adding and how it would contribute to our API design. What is our caching strategy?&lt;/p&gt;
+
+&lt;h4 id=&quot;how&quot;&gt;How&lt;/h4&gt;
+&lt;p&gt;How in theory (as per framework) is about the “process” definition. But in this case, if all other areas above were part of “analysis”, I consider “How” as “design” (and not actually the “process”). We define the actual API specification, selection of tools and technologies, frameworks, addressing of cross cutting concerns and so on.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Example:&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;We, say, chose open API specification (previously swagger), to define our API. We implement API on Microservices based architecture using Spring Boot, use NoSQL database and host our service on AWS as part of our enterprise infrastructure.&lt;/p&gt;
+
+&lt;p&gt;I hope this helps in analysis and design of APIs.&lt;/p&gt;
+</description>
+        <pubDate>Wed, 24 Jan 2018 21:55:00 +0530</pubDate>
+        <link>http://localhost:4000/blog/2018/api-analysis-and-design-zachman-way/</link>
+        <guid isPermaLink="true">http://localhost:4000/blog/2018/api-analysis-and-design-zachman-way/</guid>
+        
+        <category>API</category>
+        
+        
+        <category>API</category>
+        
+      </item>
     
       <item>
         <title>ESB and API Management Platforms – An evolutionary perspective on commonalities and differences</title>
