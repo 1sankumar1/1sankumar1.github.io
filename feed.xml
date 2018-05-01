@@ -5,8 +5,8 @@
     <description>API Integration and Architecture</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 25 Jan 2018 17:48:25 +0530</pubDate>
-    <lastBuildDate>Thu, 25 Jan 2018 17:48:25 +0530</lastBuildDate>
+    <pubDate>Wed, 02 May 2018 00:30:27 +0530</pubDate>
+    <lastBuildDate>Wed, 02 May 2018 00:30:27 +0530</lastBuildDate>
     <generator>Jekyll v3.5.1</generator>
     
       <item>
@@ -68,141 +68,6 @@
         <pubDate>Wed, 24 Jan 2018 21:55:00 +0530</pubDate>
         <link>http://localhost:4000/blog/2018/api-analysis-and-design-zachman-way/</link>
         <guid isPermaLink="true">http://localhost:4000/blog/2018/api-analysis-and-design-zachman-way/</guid>
-        
-        <category>API</category>
-        
-        
-        <category>API</category>
-        
-      </item>
-    
-      <item>
-        <title>ESB and API Management Platforms – An evolutionary perspective on commonalities and differences</title>
-        <description>&lt;div class=&quot;post-content&quot;&gt;
-      &lt;p&gt;Did you ever hear Facebook, Google or Amazon using ESBs? May be not. A web scale organization may have much more integration complexities than a typically enterprise, but it is not common to hear them adopt certain architectural paradigms (or technology products) that are mainstream in enterprises, say a bank or an insurance organization. One of the fundamental reason for that is the “age” of enterprise and its “evolution” alongside technology advancement over the decades. These enterprises existed much before web companies came into existence, and what differentiates them is the huge legacy that they have accumulated over years.&lt;/p&gt;
-
-&lt;p&gt;Let us talk about a tech-savvy bank (say &lt;em&gt;XY Bank&lt;/em&gt;) of pre-internet era, starting from 90s. &lt;em&gt;XYB&lt;/em&gt; has most of its business functions and data on mainframes. Employees are using dumb terminals that connect them to the mainframes. Thick client UI applications have taken over some of the front-end functions. These client/server applications talk to a [database] server or say a program written on C/Unix, which in turn communicates with a DB or mainframe systems.&lt;/p&gt;
-
-&lt;p&gt;By mid 90s, internet gradually started gaining popularity. &lt;em&gt;XYB&lt;/em&gt; now wants its core functions to be available on internet so it creates a web platform for its customers. Since internet is just an additional channel, it makes no sense for core applications to be re-written. We just need new web platform to “communicate” to the existing applications in mainframes, coded in client/server architecture, are packaged/bespoke and so on.&lt;/p&gt;
-
-&lt;p&gt;The need for applications to “communicate” accelerated advances in “distributed computing” technology. Remember this was also an era of mergers and acquisition of financial organizations, which increased the need to wire more systems. Technology companies filled the void with &lt;em&gt;middleware products&lt;/em&gt;. Standards emerged; vendors came up with their implementations (e.g. implementation of ORB or enterprise java specification), EAI frameworks and finally ESBs. ESBs fundamentally fulfilled the following needs:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;ESBs held the internal architectural pieces of enterprises together. It is the internal nervous system of an organization, which decouple big monolith organs, and provided a unified layer for upstream applications.&lt;/li&gt;
-  &lt;li&gt;Connected desperate enterprise systems written in different technologies, at different times, use different protocols, and are owned by different departments etc.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;p&gt;Fast-forward a decade and we have API platforms. There is a commonality between the two in simplistic terms.&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;ESBs abstracted enterprise assets built in 90s and before. API management suites are doing just the same with additional decade of legacy.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;The way internet forced enterprises to wrap their existing resources under ESBs to ease the consumption; digital forces are pushing them to adopt API based suites.&lt;/p&gt;
-
-&lt;p&gt;&lt;b&gt;In perfect world, enterprises did not need ESB suites then or API lifecycle suites now, but market competitiveness does justify introducing an extra layer in the architectural mix.&lt;/b&gt;&lt;/p&gt;
-
-&lt;p&gt;With digital-everything, &lt;em&gt;XYB&lt;/em&gt; has a need to become a platform now. The &lt;em&gt;consumers&lt;/em&gt; are not just its end customers, but also a larger ecosystem outside its enterprise boundaries. Fundamentally, &lt;em&gt;XYB&lt;/em&gt; is still a bank with same core business, but it now needs one extra layer to the onion architecture to appear like a platform. And what can fill that need? Web APIs. Web APIs can make &lt;em&gt;XYB&lt;/em&gt; more consumable in a standardized fashion. APIs can open it up for new partnerships say with FinTech startups, new channels and new products.&lt;/p&gt;
-
-&lt;p&gt;The challenge is, this needs to happen in a lean and nimble way amid all the complexities of IT landscape in a typically bank. This is where API management platforms shine. You do not need API platform to create APIs but you need them to create APIs fast. Of course, there are additional bells-and-whistles that API platform provide, but for an enterprise, the fundamental need is to create APIs quickly on top of their existing legacy assets. It is the ability of quickly wire the downstream resources and create an API that makes API platform unique.&lt;/p&gt;
-
-&lt;p&gt;API platforms meet the notion of 2-speed IT which is fundamental to segregate system of records from system of engagements. And they will continue to do so for a foreseeable future.&lt;/p&gt;
-
-    &lt;/div&gt;
-
-</description>
-        <pubDate>Tue, 10 May 2016 22:09:18 +0530</pubDate>
-        <link>http://localhost:4000/blog/2016/esb-and-api-management-platforms/</link>
-        <guid isPermaLink="true">http://localhost:4000/blog/2016/esb-and-api-management-platforms/</guid>
-        
-        <category>API</category>
-        
-        
-        <category>API</category>
-        
-      </item>
-    
-      <item>
-        <title>Enterprise Legacy and REST</title>
-        <description>&lt;div class=&quot;post-content&quot;&gt;
-      &lt;p&gt;One common challenge that today’s enterprises are facing is “How to RESTI-fy their decade old legacy applications”. Before we get into “How” part of RESTifying enterprise legacy, it is important to first understand the “Why”. What is wrong with SOAP web services? What actually changed in recent years, that we need to rethink now? After all, web services have abstracted enterprise legacy for more than a decade now.&lt;/p&gt;
-
-&lt;p&gt;Following are few broad areas that we need to understand why REST is more prominent than ever.&lt;/p&gt;
-
-&lt;h4 id=&quot;1-rest-as-an-architectural-style-makes-more-sense-in-certain-situations&quot;&gt;1) REST as an Architectural Style Makes More Sense in Certain Situations&lt;/h4&gt;
-
-&lt;p&gt;We tend to compare REST with SOAP web services but there cannot be a direct comparison between an architectural style (REST) and a protocol (SOAP). SOA with SOAP/HTTP and ROA (resource-oriented architecture) with JSON/HTTP have become so prominent forms of these two architectural styles that we mix these terms up. More apt comparison is between SOA and ROA. I have, though, used JSON and SOAP to examplify scenerios in the remaining post.&lt;/p&gt;
-
-&lt;p&gt;With that distinction in mind, let us start with SOA based web services. Web services are a way to do RPC. In simple terms, what RPC means is that if you cut open the SOAP request message, it has operation name inside it. Remember that “P” in RPC stands for “procedure” that you intend to call remotely - using web services, CORBA or any other means. This operation-oriented nature has problems in certain situations. It assumes that there exists a predefined operation, which behaves in certain way. Provider creates the contract and consumer adheres to that contract. This rigidity in contract though has benefits, is not always needed. Rigidity demands more governance and complicates the usage of services beyond enterprise boundaries. This behavior, to large extent, is dictated by SOA principles. Discoverability, service contracts, abstractions etc are, afterall, core to SOA. It does not mean that REST based architecture gives us the freedom to do things the way we want. It too has design principles and “constraints”. However, there are certain differences:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Both approaches decompose the problem domain differently. REST breaks down the problem as &lt;em&gt;resources&lt;/em&gt;, where as SOA puts &lt;em&gt;actions&lt;/em&gt; on the front seat.&lt;/li&gt;
-  &lt;li&gt;For most practical purposes, REST sits atop HTTP, whereas SOA based web services have one extra layer of abstraction in addition to HTTP - SOAP. Do we really need it, is highly debatable. It does have merits but those may not be needed in every situation.&lt;/li&gt;
-  &lt;li&gt;In case of REST, both “Web applications” and “Services” are designed with same architecture. It leverages standard elements of internet (routers, proxies, servers or consumer platforms) to their full potential, without any customizations.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Irrespective of which architectural style we use, we need to make right engineering compromises and adhere to the guidance to the extent needed. What is more important is to understand the rationale, and make wise use of guidance, stated principles and imposed constraints for architectural style chosen.&lt;/p&gt;
-
-&lt;p&gt;NOTE: There do &lt;a href=&quot;http://www.ibm.com/developerworks/library/ws-whichwsdl/&quot;&gt;exists&lt;/a&gt; message-oriented style for web services (Example: document/literal wrapped) but that too have constraints in addition to the complexity it brings.&lt;/p&gt;
-
-&lt;h4 id=&quot;2-advent-of-digital-technology&quot;&gt;2) Advent of Digital Technology&lt;/h4&gt;
-
-&lt;p&gt;Usage of REST has increased manifold due to emerging digital technologies. Let us take example of lowest denominator of digital channels – a modern web browser. It is not long since the job of a browser was primarily to render html markup. Of-course browsers were interactive right from the early days but most of the interactive-ness was handled on the web server. Browser mostly displayed content and captured the input. Web servers called the middleware, which in turn abstracted various enterprise systems. Things changed as commodity hardware became cheaper and powerful. It allowed desktop applications including browsers to consume more hardware and network resources. JS based frameworks, libraries and developer ecosystem leapfrogged the web development. Browser became full-blown client tier that now could provide rich user interface and also invoke enterprise resources directly.&lt;/p&gt;
-
-&lt;p&gt;With these advancements, REST based services made much more sense than the SOAP services. Roy Fielding’s REST architectural style that was envisioned for World Wide Web became more relevant to manage both html templates as well as the data to fill those templates.&lt;/p&gt;
-
-&lt;p&gt;Extend this to mobile and other devices that have built in support for JSON, it makes perfect sense to use REST based architecture that provides uniform access to channels – existing or new.&lt;/p&gt;
-
-&lt;h4 id=&quot;3-web-apis-is-a-channel-strategy&quot;&gt;3) Web APIs is a Channel Strategy&lt;/h4&gt;
-
-&lt;p&gt;It is important to note that REST based web APIs are mostly part of &lt;em&gt;channel strategy&lt;/em&gt; whereas SOA has traditionally been used for &lt;em&gt;enterprise integration&lt;/em&gt;. Yes, APIs can be used to wire enterprise applications, or web services can be exposed for digital channels but there is fundamental difference between the two. Channels typically require data to be mashed together which is easier if based on &lt;em&gt;resources&lt;/em&gt; than on &lt;em&gt;verb&lt;/em&gt;-based services.&lt;/p&gt;
-
-&lt;p&gt;Also, APIs are about openness and innovation beyond enterprise boundaries. This require lean-ness in governance, ease of discoverability and so on. The way we have been governing web services, cannot meet that expectation.&lt;/p&gt;
-
-&lt;h4 id=&quot;4-performance-and-scalability&quot;&gt;4) Performance and Scalability&lt;/h4&gt;
-&lt;p&gt;Verboseness of XML increases consumption of computational and network resources. This become more important when applications are chattier. Chattiness is the very nature of the digital applications where user experience takes the centerstage. We need smaller payloads but with more network communication. Also, REST uses “GET” heavily (and SOAP does not) which is HTTP cacheable. Other aspect around performance that is usually discussed is stateless-ness of REST. In my opinion, SOAP services too are (or can be) stateless which makes this argument a little weaker. The only difference is that statelessness is &lt;em&gt;explicitly&lt;/em&gt; avoided by REST.&lt;/p&gt;
-
-&lt;h2&gt;Having established when and why REST is advantageous, let us see how this can be implemented in enterprises.&lt;/h2&gt;
-&lt;p&gt;There are two situations are typically encountered in organizations.&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Ground up development of application&lt;/li&gt;
-  &lt;li&gt;Legacy systems that need to be exposed for digital consumption&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Let us discuss these two cases in detail.&lt;/p&gt;
-
-&lt;h4 id=&quot;ground-up-development&quot;&gt;Ground-up Development:&lt;/h4&gt;
-
-&lt;p&gt;This is most straightforward and top-down scenerio where services can be designed RESTful ground up. We define the API spec first and then create the implementation. How we design REST APIs is not scope of this post but I like &lt;a href=&quot;https://www.thoughtworks.com/insights/blog/rest-api-design-resource-modeling&quot;&gt;this&lt;/a&gt; and &lt;a href=&quot;http://www.vinaysahni.com/best-practices-for-a-pragmatic-restful-api&quot;&gt;this&lt;/a&gt; as starting point. Three fundamental rules in my experience, are i) APIs are not mere CRUD operations over HTTP. ii) Granularity of API is contextual to the problem domain. iii) It is okay to convert some “Verbs” as “Nouns” as long as we have enterprise-wide formal guidance that describes where to draw the line.&lt;/p&gt;
-
-&lt;h4&gt;Legacy systems that need to be exposed to digital consumption:&lt;/h4&gt;
-
-&lt;p&gt;In large enterprises, there are tons of legacy applications (e.g. mainframes based, client server or fifteen years old java based applications) that are core to the business. Re-engineering these applications just for RESTification is not always business justifiable. Digital initiatives, however, do provide opportunities to piggy-back the RESTification exercise. It is important to note that digital platforms by themselves do not necessitate usage of REST architecture. There is affinity towards JSON based payloads which can be achieved without REST. In fact, organizations in last few years have chosen to create JSON service wrappers (over existing web services etc) to meet needs of mobile and other RIA platforms.&lt;/p&gt;
-
-&lt;p&gt;Assuming that benefits of REST usage are well justfied (some discussed above), following is an approach that can be considered. Here, I also like to mention &lt;a href=&quot;https://martinfowler.com/articles/richardsonMaturityModel.html&quot;&gt;Richardson Maturity Model&lt;/a&gt; for REST strategy. In my opinion, in large enterprises it can take years to jump from one maturity level to the next as prescribed in this (or my understanding of it..). It may be more beneficial to seggregate API layer from the underlying systems as described below (in progress).&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;Step-1:&lt;/em&gt; Identify the resources from the legacy systems. These could be extracted from existing documentation or code. It is comparatively easy to identify resources from applications that are built on object-oriented design. Besides resource identification, we need to determine the relationship among the resources.&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;Step-2:&lt;/em&gt; Once we have identify the resources, next comes the ownership. Though resource identification and their ownership can go hand in hand, It is  important to understand that just because a resource is found in an LOB application, does not mean it belongs there(Example: A “Customer” resource in a multi-LOB organization). And vice versa. In addition, there can be resource hierarchy that needs to be established.&lt;/p&gt;
-
-&lt;p&gt;This leads to discussion on where we start with REST in organizations. In an ideal situation, it should enterprise wide initiative. At the bare minimum, the guidance and enterprise-wide governace aspects must be chalked out upfront.&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;Step-3:&lt;/em&gt; For the identified resources, we now need to map existing service operations to HTTP verbs. This is the most complex part of this exercise. We may end up creating new resources or “blend resources” in the process.&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;Step-4:&lt;/em&gt; Formalize the API specification. While performing above three steps, we are essentially modelling our APIs from the existing implementation in a bottom-up way. Extracting a formal definition of API is needed so that it can be shared with the API consumers.&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;Step-5:&lt;/em&gt; Once we have the API specification with resources and verbs defined, next comes the implementation of API layer. API implementation in this case merely means to create layer that expose an endpoint as per the API spec and wire it with existing underlying resources. Commercial API Lifecycle management suites can ease this work. Most of these products also support industry specifications for APIs, provided lifecycle management services and add other digital capabilities. It however is not necessary to use any commerical tool to wire API layer with enterprise legacy resources. Whether to use one or create a custom API layer will be discussed in another post.&lt;/p&gt;
-
-&lt;p&gt;Feel free to comment.&lt;/p&gt;
-
-    &lt;/div&gt;
-</description>
-        <pubDate>Wed, 16 Mar 2016 22:09:18 +0530</pubDate>
-        <link>http://localhost:4000/blog/2016/why-how-rest-enterprise/</link>
-        <guid isPermaLink="true">http://localhost:4000/blog/2016/why-how-rest-enterprise/</guid>
         
         <category>API</category>
         
@@ -723,9 +588,144 @@
 
     &lt;/div&gt;
 </description>
-        <pubDate>Thu, 12 Nov 2015 22:09:18 +0530</pubDate>
-        <link>http://localhost:4000/blog/2015/pncapi-north-america/</link>
-        <guid isPermaLink="true">http://localhost:4000/blog/2015/pncapi-north-america/</guid>
+        <pubDate>Sun, 12 Nov 2017 22:09:18 +0530</pubDate>
+        <link>http://localhost:4000/blog/2017/pncapi-north-america/</link>
+        <guid isPermaLink="true">http://localhost:4000/blog/2017/pncapi-north-america/</guid>
+        
+        <category>API</category>
+        
+        
+        <category>API</category>
+        
+      </item>
+    
+      <item>
+        <title>Enterprise Legacy and REST</title>
+        <description>&lt;div class=&quot;post-content&quot;&gt;
+      &lt;p&gt;One common challenge that today’s enterprises are facing is “How to RESTI-fy their decade old legacy applications”. Before we get into “How” part of RESTifying enterprise legacy, it is important to first understand the “Why”. What is wrong with SOAP web services? What actually changed in recent years, that we need to rethink now? After all, web services have abstracted enterprise legacy for more than a decade now.&lt;/p&gt;
+
+&lt;p&gt;Following are few broad areas that we need to understand why REST is more prominent than ever.&lt;/p&gt;
+
+&lt;h4 id=&quot;1-rest-as-an-architectural-style-makes-more-sense-in-certain-situations&quot;&gt;1) REST as an Architectural Style Makes More Sense in Certain Situations&lt;/h4&gt;
+
+&lt;p&gt;We tend to compare REST with SOAP web services but there cannot be a direct comparison between an architectural style (REST) and a protocol (SOAP). SOA with SOAP/HTTP and ROA (resource-oriented architecture) with JSON/HTTP have become so prominent forms of these two architectural styles that we mix these terms up. More apt comparison is between SOA and ROA. I have, though, used JSON and SOAP to examplify scenerios in the remaining post.&lt;/p&gt;
+
+&lt;p&gt;With that distinction in mind, let us start with SOA based web services. Web services are a way to do RPC. In simple terms, what RPC means is that if you cut open the SOAP request message, it has operation name inside it. Remember that “P” in RPC stands for “procedure” that you intend to call remotely - using web services, CORBA or any other means. This operation-oriented nature has problems in certain situations. It assumes that there exists a predefined operation, which behaves in certain way. Provider creates the contract and consumer adheres to that contract. This rigidity in contract though has benefits, is not always needed. Rigidity demands more governance and complicates the usage of services beyond enterprise boundaries. This behavior, to large extent, is dictated by SOA principles. Discoverability, service contracts, abstractions etc are, afterall, core to SOA. It does not mean that REST based architecture gives us the freedom to do things the way we want. It too has design principles and “constraints”. However, there are certain differences:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Both approaches decompose the problem domain differently. REST breaks down the problem as &lt;em&gt;resources&lt;/em&gt;, where as SOA puts &lt;em&gt;actions&lt;/em&gt; on the front seat.&lt;/li&gt;
+  &lt;li&gt;For most practical purposes, REST sits atop HTTP, whereas SOA based web services have one extra layer of abstraction in addition to HTTP - SOAP. Do we really need it, is highly debatable. It does have merits but those may not be needed in every situation.&lt;/li&gt;
+  &lt;li&gt;In case of REST, both “Web applications” and “Services” are designed with same architecture. It leverages standard elements of internet (routers, proxies, servers or consumer platforms) to their full potential, without any customizations.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Irrespective of which architectural style we use, we need to make right engineering compromises and adhere to the guidance to the extent needed. What is more important is to understand the rationale, and make wise use of guidance, stated principles and imposed constraints for architectural style chosen.&lt;/p&gt;
+
+&lt;p&gt;NOTE: There do &lt;a href=&quot;http://www.ibm.com/developerworks/library/ws-whichwsdl/&quot;&gt;exists&lt;/a&gt; message-oriented style for web services (Example: document/literal wrapped) but that too have constraints in addition to the complexity it brings.&lt;/p&gt;
+
+&lt;h4 id=&quot;2-advent-of-digital-technology&quot;&gt;2) Advent of Digital Technology&lt;/h4&gt;
+
+&lt;p&gt;Usage of REST has increased manifold due to emerging digital technologies. Let us take example of lowest denominator of digital channels – a modern web browser. It is not long since the job of a browser was primarily to render html markup. Of-course browsers were interactive right from the early days but most of the interactive-ness was handled on the web server. Browser mostly displayed content and captured the input. Web servers called the middleware, which in turn abstracted various enterprise systems. Things changed as commodity hardware became cheaper and powerful. It allowed desktop applications including browsers to consume more hardware and network resources. JS based frameworks, libraries and developer ecosystem leapfrogged the web development. Browser became full-blown client tier that now could provide rich user interface and also invoke enterprise resources directly.&lt;/p&gt;
+
+&lt;p&gt;With these advancements, REST based services made much more sense than the SOAP services. Roy Fielding’s REST architectural style that was envisioned for World Wide Web became more relevant to manage both html templates as well as the data to fill those templates.&lt;/p&gt;
+
+&lt;p&gt;Extend this to mobile and other devices that have built in support for JSON, it makes perfect sense to use REST based architecture that provides uniform access to channels – existing or new.&lt;/p&gt;
+
+&lt;h4 id=&quot;3-web-apis-is-a-channel-strategy&quot;&gt;3) Web APIs is a Channel Strategy&lt;/h4&gt;
+
+&lt;p&gt;It is important to note that REST based web APIs are mostly part of &lt;em&gt;channel strategy&lt;/em&gt; whereas SOA has traditionally been used for &lt;em&gt;enterprise integration&lt;/em&gt;. Yes, APIs can be used to wire enterprise applications, or web services can be exposed for digital channels but there is fundamental difference between the two. Channels typically require data to be mashed together which is easier if based on &lt;em&gt;resources&lt;/em&gt; than on &lt;em&gt;verb&lt;/em&gt;-based services.&lt;/p&gt;
+
+&lt;p&gt;Also, APIs are about openness and innovation beyond enterprise boundaries. This require lean-ness in governance, ease of discoverability and so on. The way we have been governing web services, cannot meet that expectation.&lt;/p&gt;
+
+&lt;h4 id=&quot;4-performance-and-scalability&quot;&gt;4) Performance and Scalability&lt;/h4&gt;
+&lt;p&gt;Verboseness of XML increases consumption of computational and network resources. This become more important when applications are chattier. Chattiness is the very nature of the digital applications where user experience takes the centerstage. We need smaller payloads but with more network communication. Also, REST uses “GET” heavily (and SOAP does not) which is HTTP cacheable. Other aspect around performance that is usually discussed is stateless-ness of REST. In my opinion, SOAP services too are (or can be) stateless which makes this argument a little weaker. The only difference is that statelessness is &lt;em&gt;explicitly&lt;/em&gt; avoided by REST.&lt;/p&gt;
+
+&lt;h2&gt;Having established when and why REST is advantageous, let us see how this can be implemented in enterprises.&lt;/h2&gt;
+&lt;p&gt;There are two situations are typically encountered in organizations.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Ground up development of application&lt;/li&gt;
+  &lt;li&gt;Legacy systems that need to be exposed for digital consumption&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Let us discuss these two cases in detail.&lt;/p&gt;
+
+&lt;h4 id=&quot;ground-up-development&quot;&gt;Ground-up Development:&lt;/h4&gt;
+
+&lt;p&gt;This is most straightforward and top-down scenerio where services can be designed RESTful ground up. We define the API spec first and then create the implementation. How we design REST APIs is not scope of this post but I like &lt;a href=&quot;https://www.thoughtworks.com/insights/blog/rest-api-design-resource-modeling&quot;&gt;this&lt;/a&gt; and &lt;a href=&quot;http://www.vinaysahni.com/best-practices-for-a-pragmatic-restful-api&quot;&gt;this&lt;/a&gt; as starting point. Three fundamental rules in my experience, are i) APIs are not mere CRUD operations over HTTP. ii) Granularity of API is contextual to the problem domain. iii) It is okay to convert some “Verbs” as “Nouns” as long as we have enterprise-wide formal guidance that describes where to draw the line.&lt;/p&gt;
+
+&lt;h4&gt;Legacy systems that need to be exposed to digital consumption:&lt;/h4&gt;
+
+&lt;p&gt;In large enterprises, there are tons of legacy applications (e.g. mainframes based, client server or fifteen years old java based applications) that are core to the business. Re-engineering these applications just for RESTification is not always business justifiable. Digital initiatives, however, do provide opportunities to piggy-back the RESTification exercise. It is important to note that digital platforms by themselves do not necessitate usage of REST architecture. There is affinity towards JSON based payloads which can be achieved without REST. In fact, organizations in last few years have chosen to create JSON service wrappers (over existing web services etc) to meet needs of mobile and other RIA platforms.&lt;/p&gt;
+
+&lt;p&gt;Assuming that benefits of REST usage are well justfied (some discussed above), following is an approach that can be considered. Here, I also like to mention &lt;a href=&quot;https://martinfowler.com/articles/richardsonMaturityModel.html&quot;&gt;Richardson Maturity Model&lt;/a&gt; for REST strategy. In my opinion, in large enterprises it can take years to jump from one maturity level to the next as prescribed in this (or my understanding of it..). It may be more beneficial to seggregate API layer from the underlying systems as described below (in progress).&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Step-1:&lt;/em&gt; Identify the resources from the legacy systems. These could be extracted from existing documentation or code. It is comparatively easy to identify resources from applications that are built on object-oriented design. Besides resource identification, we need to determine the relationship among the resources.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Step-2:&lt;/em&gt; Once we have identify the resources, next comes the ownership. Though resource identification and their ownership can go hand in hand, It is  important to understand that just because a resource is found in an LOB application, does not mean it belongs there(Example: A “Customer” resource in a multi-LOB organization). And vice versa. In addition, there can be resource hierarchy that needs to be established.&lt;/p&gt;
+
+&lt;p&gt;This leads to discussion on where we start with REST in organizations. In an ideal situation, it should enterprise wide initiative. At the bare minimum, the guidance and enterprise-wide governace aspects must be chalked out upfront.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Step-3:&lt;/em&gt; For the identified resources, we now need to map existing service operations to HTTP verbs. This is the most complex part of this exercise. We may end up creating new resources or “blend resources” in the process.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Step-4:&lt;/em&gt; Formalize the API specification. While performing above three steps, we are essentially modelling our APIs from the existing implementation in a bottom-up way. Extracting a formal definition of API is needed so that it can be shared with the API consumers.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Step-5:&lt;/em&gt; Once we have the API specification with resources and verbs defined, next comes the implementation of API layer. API implementation in this case merely means to create layer that expose an endpoint as per the API spec and wire it with existing underlying resources. Commercial API Lifecycle management suites can ease this work. Most of these products also support industry specifications for APIs, provided lifecycle management services and add other digital capabilities. It however is not necessary to use any commerical tool to wire API layer with enterprise legacy resources. Whether to use one or create a custom API layer will be discussed in another post.&lt;/p&gt;
+
+&lt;p&gt;Feel free to comment.&lt;/p&gt;
+
+    &lt;/div&gt;
+</description>
+        <pubDate>Thu, 16 Mar 2017 22:09:18 +0530</pubDate>
+        <link>http://localhost:4000/blog/2017/why-how-rest-enterprise/</link>
+        <guid isPermaLink="true">http://localhost:4000/blog/2017/why-how-rest-enterprise/</guid>
+        
+        <category>API</category>
+        
+        
+        <category>API</category>
+        
+      </item>
+    
+      <item>
+        <title>ESB and API Management Platforms – An evolutionary perspective on commonalities and differences</title>
+        <description>&lt;div class=&quot;post-content&quot;&gt;
+      &lt;p&gt;Did you ever hear Facebook, Google or Amazon using ESBs? May be not. A web scale organization may have much more integration complexities than a typically enterprise, but it is not common to hear them adopt certain architectural paradigms (or technology products) that are mainstream in enterprises, say a bank or an insurance organization. One of the fundamental reason for that is the “age” of enterprise and its “evolution” alongside technology advancement over the decades. These enterprises existed much before web companies came into existence, and what differentiates them is the huge legacy that they have accumulated over years.&lt;/p&gt;
+
+&lt;p&gt;Let us talk about a tech-savvy bank (say &lt;em&gt;XY Bank&lt;/em&gt;) of pre-internet era, starting from 90s. &lt;em&gt;XYB&lt;/em&gt; has most of its business functions and data on mainframes. Employees are using dumb terminals that connect them to the mainframes. Thick client UI applications have taken over some of the front-end functions. These client/server applications talk to a [database] server or say a program written on C/Unix, which in turn communicates with a DB or mainframe systems.&lt;/p&gt;
+
+&lt;p&gt;By mid 90s, internet gradually started gaining popularity. &lt;em&gt;XYB&lt;/em&gt; now wants its core functions to be available on internet so it creates a web platform for its customers. Since internet is just an additional channel, it makes no sense for core applications to be re-written. We just need new web platform to “communicate” to the existing applications in mainframes, coded in client/server architecture, are packaged/bespoke and so on.&lt;/p&gt;
+
+&lt;p&gt;The need for applications to “communicate” accelerated advances in “distributed computing” technology. Remember this was also an era of mergers and acquisition of financial organizations, which increased the need to wire more systems. Technology companies filled the void with &lt;em&gt;middleware products&lt;/em&gt;. Standards emerged; vendors came up with their implementations (e.g. implementation of ORB or enterprise java specification), EAI frameworks and finally ESBs. ESBs fundamentally fulfilled the following needs:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;ESBs held the internal architectural pieces of enterprises together. It is the internal nervous system of an organization, which decouple big monolith organs, and provided a unified layer for upstream applications.&lt;/li&gt;
+  &lt;li&gt;Connected desperate enterprise systems written in different technologies, at different times, use different protocols, and are owned by different departments etc.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;Fast-forward a decade and we have API platforms. There is a commonality between the two in simplistic terms.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;ESBs abstracted enterprise assets built in 90s and before. API management suites are doing just the same with additional decade of legacy.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;The way internet forced enterprises to wrap their existing resources under ESBs to ease the consumption; digital forces are pushing them to adopt API based suites.&lt;/p&gt;
+
+&lt;p&gt;&lt;b&gt;In perfect world, enterprises did not need ESB suites then or API lifecycle suites now, but market competitiveness does justify introducing an extra layer in the architectural mix.&lt;/b&gt;&lt;/p&gt;
+
+&lt;p&gt;With digital-everything, &lt;em&gt;XYB&lt;/em&gt; has a need to become a platform now. The &lt;em&gt;consumers&lt;/em&gt; are not just its end customers, but also a larger ecosystem outside its enterprise boundaries. Fundamentally, &lt;em&gt;XYB&lt;/em&gt; is still a bank with same core business, but it now needs one extra layer to the onion architecture to appear like a platform. And what can fill that need? Web APIs. Web APIs can make &lt;em&gt;XYB&lt;/em&gt; more consumable in a standardized fashion. APIs can open it up for new partnerships say with FinTech startups, new channels and new products.&lt;/p&gt;
+
+&lt;p&gt;The challenge is, this needs to happen in a lean and nimble way amid all the complexities of IT landscape in a typically bank. This is where API management platforms shine. You do not need API platform to create APIs but you need them to create APIs fast. Of course, there are additional bells-and-whistles that API platform provide, but for an enterprise, the fundamental need is to create APIs quickly on top of their existing legacy assets. It is the ability of quickly wire the downstream resources and create an API that makes API platform unique.&lt;/p&gt;
+
+&lt;p&gt;API platforms meet the notion of 2-speed IT which is fundamental to segregate system of records from system of engagements. And they will continue to do so for a foreseeable future.&lt;/p&gt;
+
+    &lt;/div&gt;
+
+</description>
+        <pubDate>Tue, 10 May 2016 22:09:18 +0530</pubDate>
+        <link>http://localhost:4000/blog/2016/esb-and-api-management-platforms/</link>
+        <guid isPermaLink="true">http://localhost:4000/blog/2016/esb-and-api-management-platforms/</guid>
         
         <category>API</category>
         
